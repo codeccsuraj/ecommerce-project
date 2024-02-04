@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import login_img from '../assets/loginbg.png'
+import { FaHome } from "react-icons/fa";
+
 const Login = () => {
   return (
     <>
@@ -9,7 +11,8 @@ const Login = () => {
                 <div>
                     <img src={login_img} alt="" className='object-cover'/>
                 </div>
-                <div className='flex flex-col items-center'>
+                <div className='flex flex-col items-center relative'>
+                    <span className='absolute top-4 right-4'><Link to='/' className='flex gap-2 text-green-600'><FaHome className='text-2xl text-green-600' /> Back to home</Link></span>
                     <h2 className='text-3xl py-4 text-center'>Login here</h2>
                     <p>Not a existing User ? <Link to='/signup' className='text-cyan-600 font-bold'>Sign in here</Link></p>
                     <form action="" className='w-full'>
