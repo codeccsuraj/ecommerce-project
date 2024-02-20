@@ -6,17 +6,23 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import { AuthContextProvider } from './context';
+import { CartProvider } from 'react-use-cart';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <Router>
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </Router>
+    <AuthContextProvider>
+      <CartProvider>
+        <Router>
+          <Provider store={store}>
+            <App />
+          </Provider>
+        </Router>
+      </CartProvider>
+    </AuthContextProvider>
   </React.StrictMode>
 );
 

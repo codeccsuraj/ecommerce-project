@@ -1,46 +1,62 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo_img from "../../assets/icon/logo.png";
-import { IoBagHandleSharp } from "react-icons/io5";
-import { FaWallet } from "react-icons/fa";
-// import { FaUser } from "react-icons/fa";
+import Search from "../search/Search";
+import { useCart } from "react-use-cart";
 
 
 
 const Navbar = () => {
+
+  const {totalUniqueItems} = useCart();
+
+
   return (
     <>
-      <div className="">
-        <div className="flex items-center justify-between mx-8">
-          <div className="flex items-center justify-start w-3/4 ">
-            <div className=" w-1/4 ">
-              <Link className="">
-                <img src={logo_img} alt="" className="object-cover w-20" />
-              </Link>
-            </div>
-            <div className="w-3/4">
-              <input type="search" placeholder="Search products.." className="w-full py-3 px-3 rounded-xl bg-slate-100 border-none outline-none" />
-            </div>
+      <nav className="flex items-center justify-end bg-slate-300">
+        <div className="mx-10 py-1">
+          <ul className="flex items-center gap-3">
+            <li>
+              <Link className="text-[14px] font-semibold">My account</Link>
+            </li>
+            <li>
+              <Link className="text-[14px] font-semibold">Orders</Link>
+            </li>
+            <li>
+              <Link className="text-[14px] font-semibold">Support</Link>
+            </li>
+            <li>
+              <Link className="text-[14px] font-semibold">Return policy</Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav className="py-2 bg-slate-50 sticky top-0 left-0 z-50">
+        <div className="mx-10 flex items-center justify-between">
+          <div className="w-14">
+            <Link to="/">
+              <img src={logo_img} alt="" className="object-cover w-full" />
+            </Link>
           </div>
-          <div className="w-1/4 flex justify-evenly items-center">
-              <Link className="flex flex-col items-center">
-                <IoBagHandleSharp className="text-4xl text-[#7dd87d]" />
-                <span className="font-bold text-[#906387]">Cart</span>
-              </Link>
-              <Link className="flex flex-col items-center">
-                <FaWallet className="text-4xl text-[#7dd87d]" />
-                <span className="font-bold text-[#906387]">Wallet</span>
-              </Link>
-              <Link>
-                <Link 
-                    className="bg-[#906387] text-1xl font-bold rounded-2xl py-2 text-[#7dd87d] hover:text-white px-4"
-                    to='/login'
-                >Login / Signup</Link>
-                    
-              </Link>
+          <div className="flex items-center justify-between w-3/5">
+            <form action="" className="w-3/5">
+              <Search />
+            </form>
+            <ul className="flex items-center gap-3">
+            <li>
+              <Link className="font-semibold">Shop</Link>
+            </li>
+            <li>
+              <Link className="font-semibold">Wishlist(0)</Link>
+            </li>
+            <li>
+              <Link to='/cart' className="font-semibold">Cart({totalUniqueItems})</Link>
+            </li>
+          </ul>
           </div>
         </div>
-      </div>
+      </nav>
+      <hr />
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { Login, Signup } from "../pages";
+import { Login, ProductList, Signup } from "../pages";
 
 const authRoutes = [
     {
@@ -9,6 +9,13 @@ const authRoutes = [
         path : "signup",
         element : <Signup />
     },
+];
+
+const contentRoutes =[
+    {
+        path : "/product/:id",
+        element : <ProductList />
+    }
 ]
 
-export {authRoutes}
+export {authRoutes, contentRoutes}

@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { slides } from '../../backend/Slides'
 import { Link } from 'react-router-dom';
+import SpecialFeature from './SpecialFeature';
 
 const Banner = () => {
   let settings ={
@@ -28,6 +29,7 @@ const Banner = () => {
                 </Slider>
             }
         </div>
+        <SpecialFeature />
     </>
   )
 }

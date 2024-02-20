@@ -31,8 +31,8 @@ const products = [
     },
     {
         id: 2,
-        title: "TRIPPING",
-        brand: "TRIPPING Gold Antique Squre gate Pole Pilar lamp",
+        brand: "TRIPPING",
+        title: "TRIPPING Gold Antique Squre gate Pole Pilar lamp",
         image_1: home_decor_crystal_img_1,
         image_2: home_decor_crystal_img_2,
         image_3: "",
@@ -49,7 +49,8 @@ const products = [
     },
     {
         id: 8,
-        brand: '	Shri & Sam',
+        category : "Kitchen Appliance",
+        brand: 'Shri & Sam',
         title: "Shri & Sam Stainless Steel Delight Solid Dinner Set",
         description: "Made of premium quality 200 series grade stainless stee",
         description2: "Included Components: 8-Pieces Dinner Plates, 8-Pieces Side Plates, 8-Pieces Glasses, 16-Pieces Bowls, 8-Pieces Chutney Bowls, 8-Pieces Pudding Bowls, 3-Pieces Serving Bowl, 3-Pieces Serving Bowl Lid, 1-Piece Perforated Serving Basting Spoon, 1-Piece Solid Serving Basting Spoon, 1-Piece Serving Rice Spoon, 1-Piece Serving Skimmer,1-Piece Salad Tong, 1-Piece Serving Ladle, 8-Pieces Fruit Fork, 8-Pieces Dessert Spoons, 8-Pieces Dessert Fork, 8-Pieces Ice Cream Spoon, 1-Piece Salad Bowl",
@@ -68,6 +69,7 @@ const products = [
     },
     {
         id: 9,
+        category : "Kitchen Appliance",
         brand: 'CROCKERY WALA AND COMPANY',
         title: "Handmade Brass Jug Pitcher",
         description: "Crockery Wala And Company Handmade Brass Jug Pitcher with 4 Legs for Serving Drinking Water, Home Decor Gift Item (1750 Ml)",
@@ -87,6 +89,7 @@ const products = [
     },
     {
         id: 10,
+        category : "Kitchen Appliance",
         brand: 'CrazyInk',
         title: "Jewel Organizer Box Hand Carved Carvings",
         description: "CrazyInk Wooden Jewellery Box for Women and men couole ring | Jewel Organizer Box Hand Carved Carvings,Gift Items (228)",
@@ -106,6 +109,7 @@ const products = [
     },
     {
         id: 11,
+        category : "Home & Decor",
         brand: '	BH COLLECTION',
         title: "Silk Touch Kashmiri Look Floral Carpet ",
         description: "NEW CRAETION JUST LAUNCHED HIGH QUALITY EMBOSS MODERN CARPET WITH COMPETITIVE PRICE",
@@ -125,6 +129,7 @@ const products = [
     },
     {
         id: 12,
+        category : "Kitchen Appliance",
         brand: 'UHUD CRAFTS',
         title: "Wooden Fold-able Side",
         description: "UHUD CRAFTS Beautiful Antique Wooden Fold-able Side Table/End Table/Plant Stand/Stool Living Room Kids Play Furniture Table Round Shape",
@@ -144,6 +149,7 @@ const products = [
     },
     {
         id: 13,
+        category : "Home & Decor",
         brand: 'Paartha Saarthi',
         title: "Rajasthani Brass Dining Table Chair Maharaja Set",
         description: "Paartha Saarthi Rajasthani Antique Decorative Handcrafted Vintage Handmade Elegant Designer Brass Dining Table Chair Maharaja Set Showpiece",
@@ -163,6 +169,7 @@ const products = [
     },
     {
         id: 14,
+        category : "Home & Decor",
         brand: 'Seetara',
         title: "Seetara Amethyst Crystal Tree",
         description: "Crystal Tree Decoration Item for Home Decor, Office (300 Beads) - Showpiece Decorative Item for Good Luck Money & Healing - Vastu Item for House, Gifting",
@@ -182,6 +189,7 @@ const products = [
     },
     {
         id: 15,
+        category : "Home & Decor",
         brand: 'Bhimonee Decor',
         title: "Handmade Copper Balaji Idol",
         description: "Copper Idols India - By Bhimonee Decor , 2.25 inches, Handmade Copper Balaji Idol Spl, 30 Grams,",

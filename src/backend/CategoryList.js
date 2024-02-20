@@ -1,6 +1,6 @@
-import category_img1 from '../../assets/banner/category_img1.png';
-import category_img2 from '../../assets/banner/category_img2.png';
-import category_img3 from '../../assets/banner/category_img3.png';
+import category_img1 from '../assets/banner/category_img1.png';
+import category_img2 from '../assets/banner/category_img2.png';
+import category_img3 from '../assets/banner/category_img3.png';
 
  const categories = [
     {
