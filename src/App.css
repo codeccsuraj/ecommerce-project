@@ -1,0 +1,4 @@
+.activeLink {
+    background-color: rgb(11, 202, 240); /* Change to your desired background color */
+    transition: all 0.2s;
+}

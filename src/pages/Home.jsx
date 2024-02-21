@@ -11,14 +11,14 @@ const Home = () => {
       <div className='mx-10 py-4'>
         <div className='flex items-center justify-between'>        
           <h2 className='text-4xl font-bold flex items-center gap-3'><IoIosTrendingUp /> Shop with trending deals..</h2>
-          <Link className='text-md font-bold text-blue-700'>See all...</Link>
+          <Link to="/shop" className='text-md font-bold text-blue-700'>See all...</Link>
         </div>
         <ProductCard data={products} />
       </div>
       <div className='mx-10 py-4'>
         <div className='flex items-center justify-between py-4'>        
           <h2 className='text-4xl font-bold flex items-center gap-3'><IoIosTrendingUp /> Shop with trending deals..</h2>
-          <Link className='text-md font-bold text-blue-700'>See all...</Link>
+          <Link to="/shop" className='text-md font-bold text-blue-700'>See all...</Link>
         </div>
         <Categories />
       </div>

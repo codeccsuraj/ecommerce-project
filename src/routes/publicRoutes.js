@@ -1,4 +1,4 @@
-import { Login, ProductList, Signup } from "../pages";
+import { Login, ProductList, Shop, Signup } from "../pages";
 
 const authRoutes = [
     {
@@ -15,6 +15,10 @@ const contentRoutes =[
     {
         path : "/product/:id",
         element : <ProductList />
+    },
+    {
+        path : "/shop",
+        element : <Shop />
     }
 ]
 
